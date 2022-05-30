@@ -1,0 +1,300 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import "_settings.scss";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: $background-color;
+  color: $main-font-color;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+
+  .prtz-i18n {
+    display: inline-block;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  #site-name {
+    cursor: pointer;
+  }
+
+  .hide-element {
+    display: none;
+  }
+
+  header {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    width: 100%;
+    background-color: $background-hover1-color;
+
+    h1 {
+      margin-bottom: 0;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .language-selector {
+      background-color: $background-incrusted;
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  footer {
+    padding: 0.8rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    @include font-size(0.8rem);
+    background-color: $background-hover1-color;
+
+    .left {
+      text-align: center;
+      @include media-breakpoint-up(md) {
+        text-align: left;
+      }
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .icons {
+
+      a {
+        margin-right: 0.5rem;
+      }
+
+      a,
+      div#contact-ico {
+        cursor: pointer;
+
+        svg {
+          width: 2rem;
+          height: auto;
+          fill: $primary;
+        }
+      }
+
+    }
+
+    #changelog-link {
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+
+  main {
+    padding-top: 5rem;
+    @include media-breakpoint-up(md) {
+      padding-top: 7rem;
+    }
+
+    .contextual-tip {
+      @include font-size(0.85rem);
+      line-height: 1;
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    #screen-home {
+
+      .site-slogan {
+        text-align: center;
+        padding-bottom: 2rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.5);
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      button {
+        width: 70%;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+    }
+
+    #screen-new-list {
+      textarea {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        height: 50vh;
+        padding: 1rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &.inactive {
+          background-color: $background-incrusted;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+      }
+
+      .btn-start-compute-list-wrapper {
+        text-align: right;
+      }
+    }
+
+    #screen-changelog {
+        #i18n-features-txt {
+          p {
+            padding-left: 2.5rem;
+            position: relative;
+
+            &:before {
+              content: "▣";
+              width: 1rem;
+              position: absolute;
+              left: 1rem;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+    }
+
+    .screen-inner {
+      .inner-body {
+        background-color: $background-hover1-color;
+        padding: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+
+        h2 {
+          margin-top: 2rem;
+          margin-bottom: 1.2rem;
+        }
+      }
+
+      .inner-close {
+          width: 1.5rem;
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+
+          svg {
+            fill: rgba(255, 255, 255, 0.35);
+
+            &:hover {
+              cursor: pointer;
+              fill: white;
+            }
+          }
+        }
+    }
+  }
+
+  .btns-wrapper {
+    margin: 2rem 0;
+
+    .btn-wrapper {
+      &.hidden {
+        display: none !important;
+      }
+
+      .btn1 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  #screen-modal {
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    .modal-container {
+      width: 95%;
+      height: 38%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #F5F5F5;
+      @include media-breakpoint-up(md) {
+        width: 25%;
+        height: 25%;
+      }
+
+      .inner-wrapper {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .modal-text {
+          color: $background-color;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        .modal-btns {
+
+          button {
+            &:first-of-type {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #screen-compute-list {
+
+    .top-tip {
+      text-align: center;
+    }
+
+    .progress-wrapper {
+
+      progress[value] {
+        appearance: none;
+        width: 100%;
+
+        &::-webkit-progress-bar {
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: $border-radius;
+          height: 3px;
+        }
+
+        &::-webkit-progress-value {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+
+      }
+    }
+
+    .stats-wrapper {
+      @include font-size(0.8rem);
+    }
+
+  }
+
+  div {
+    user-select: none;
+  }
+
+}
