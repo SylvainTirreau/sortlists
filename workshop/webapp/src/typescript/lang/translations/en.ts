@@ -14,7 +14,7 @@ export const texts = {
     "estimated-time": "estimated time",
     "time-left": "time left",
     "versions-header": "versions",
-    "versions-txt": "<p><b>version 1.1</b> (may 2022) : first version containing only the possibility of computing a list of priorities.</p>",
+    "versions-txt": "<p><b>version 1.1</b> (may 2022) : first version containing only the possibility of computing a list of priorities.</p><p><b>version 1.2</b> (not released) : add the possibility to save a list on the user's computer.</p><p><b>version 1.1</b> (not released) : Add the possibility to save a list on the sortlists servers with a user account.</p>",
     "features-header": "planned features",
     "features-txt": "<p>Save a current list</p><p>Load a saved list.</p>",
     "contact-mail-title": "Send an e-mail",

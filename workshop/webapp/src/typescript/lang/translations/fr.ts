@@ -14,7 +14,7 @@ export const texts = {
     "estimated-time": "temps estimé",
     "time-left": "temps restant",
     "versions-header": "versions",
-    "versions-txt": "<p><b>version 1.1</b> (mai 2022) : première version ne contenant que la possibilité de calculer une liste de priorités.</p>",
+    "versions-txt": "<p><b>version 1.1</b> (mai 2022) : première version ne contenant que la possibilité de calculer une liste de priorités.</p><p><b>version 1.2.</b> (non sortie) : ajout de la possibilité de sauvegarder des listes sur l'ordinateur de l'utilisatrice ou de l'utilisateur.</p><p><b>version 1.3</b> (non sortie) : ajout de la possibilité de sauvegarder des listes sur les serveurs de sortlists avec un compte utilisateur.</p>",
     "features-header": "fonctionnalités prévues",
     "features-txt": "<p>Sauvegarder une liste en cours</p><p>Charger une liste sauvegardée.</p>",
     "contact-mail-title": "Envoyer un mail",
