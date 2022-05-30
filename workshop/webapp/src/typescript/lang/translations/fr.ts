@@ -18,6 +18,6 @@ export const texts = {
     "features-header": "fonctionnalités prévues",
     "features-txt": "<p>Sauvegarder une liste en cours</p><p>Charger une liste sauvegardée.</p>",
     "contact-mail-title": "Envoyer un mail",
-    "contact-mail-txt": "<p>N'hésitez pas à envoyer un mail pour :<ul><li>proposer une traduction dans une langue qui n'existe pas;</li><li>proposer des corrections;</li><li>signaler un bug (préférez néanmoins le <a href='https://github.com/SylvainTirreau/prioritizer-webapp/issues' target='_blank'>dépôt github du projet</a> pour signaler un bug);</li><li>proposer une fonctionnalité;</li><li>tout autre chose qui vous passe par la tête...</li></ul></p><p>Quand vous cliquerez sur le bouton ci-dessous, un nouveau mail s'ouvrira dans votre logiciel de messagerie habituel. Veuillez patienter que la fenêtre se charge...</p>",
+    "contact-mail-txt": "<p>N'hésitez pas à envoyer un mail pour :<ul><li>proposer une traduction dans une langue qui n'existe pas;</li><li>proposer des corrections;</li><li>signaler un bug (préférez néanmoins le <a href='https://github.com/SylvainTirreau/sortlists/issues' target='_blank'>dépôt github du projet</a> pour signaler un bug);</li><li>proposer une fonctionnalité;</li><li>tout autre chose qui vous passe par la tête...</li></ul></p><p>Quand vous cliquerez sur le bouton ci-dessous, un nouveau mail s'ouvrira dans votre logiciel de messagerie habituel. Veuillez patienter que la fenêtre se charge...</p>",
     "send-mail": "Envoyer un email"
 }
