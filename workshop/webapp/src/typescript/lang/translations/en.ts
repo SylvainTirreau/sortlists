@@ -14,7 +14,7 @@ export const texts = {
     "estimated-time": "estimated time",
     "time-left": "time left",
     "versions-header": "versions",
-    "versions-txt": "<p><b>version 1.0</b> (may 2022) : first version containing only the possibility of computing a list of priorities.</p>",
+    "versions-txt": "<p><b>version 1.1</b> (may 2022) : first version containing only the possibility of computing a list of priorities.</p>",
     "features-header": "planned features",
     "features-txt": "<p>Save a current list</p><p>Load a saved list.</p>",
     "contact-mail-title": "Send an e-mail",
