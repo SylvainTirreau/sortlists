@@ -7,6 +7,13 @@ export class Main {
     constructor() {
         (<HTMLTextAreaElement>elementsNewList.newList).value = "";
         this.eventListenerTextarea();
+        this.eventListenerCancelBtn();
+    }
+
+    eventListenerCancelBtn = () => {
+        elementsNewList.btnCancelNewList.addEventListener('click', (event) => {
+            showScreen('home')
+        })
     }
 
     eventListenerOutsideTextarea = (event: any) => {

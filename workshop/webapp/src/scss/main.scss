@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   max-height: 100vh;
   overflow-y: scroll;
+  position: relative;
 
   .prtz-i18n {
     display: inline-block;
@@ -95,10 +96,10 @@ body {
   }
 
   main {
-    padding-top: 5rem;
-    @include media-breakpoint-up(md) {
-      padding-top: 7rem;
-    }
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 
     .contextual-tip {
       @include font-size(0.85rem);
@@ -144,10 +145,6 @@ body {
           color: rgba(255, 255, 255, 0.8);
         }
 
-      }
-
-      .btn-start-compute-list-wrapper {
-        text-align: right;
       }
     }
 
